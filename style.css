@@ -1,4 +1,8 @@
-.logo{
+main{
+ width: 25% 25%;
+}
+
+#logo{
     background-color: yellow;
 }
 
