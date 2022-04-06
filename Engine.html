@@ -1,36 +1,47 @@
+
+   
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
-  <title>JS Bin</title>
-</head>
-<body>
-  <header>
-    <nav> 
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Bin</title>
+    <script>
+      function setYear(){
+        document.getElementById('p_Year').innerText =new Date().getFullYear();
+                
+      }
+      
+      function sendoutput(){
+        document.getElementById('output').innerText = document.getElementById('site-search').value;
+      }
+        </script>
+  </head>
+  <body onload="setYear();">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main >
-    <section id="logo">
-      <h1>Our Search Engine</h1>
-    </section>
-    
-    <section>
-      <form action="#"> 
-      <input type="search" id="site-search" name="q" >
-      <button>search</button>
-      </form>
-    </section>
+    <main>
+      <section id="logo">
+        <h1>Our Search Engine</h1>
+      </section>
 
+      <section>
+        <form action="#">
+          <input type="search" id="site-search" name="q" />
+          <button onclick="sendoutput()">search</button>
+          <p id="output"> </p>
+        </form>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>&copy 2022 SearchEngine</footer>
-</body>
+    <footer> &copy <span id="p_Year"></span> <span>SearchEngine</span> </footer>
+  </body>
 </html>
