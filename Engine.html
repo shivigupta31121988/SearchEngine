@@ -8,8 +8,13 @@
     <script>
         function setYear(){
                document.getElementById('p_Year').innerText =new Date().getFullYear();
-
+                
         }
+      
+      function sendoutput(){
+      
+      document.getElementById('output').innerText = document.getElementById('site-search').innerText;
+      }
         </script>
   </head>
   <body onload="setYear();">
@@ -30,7 +35,8 @@
       <section>
         <form action="#">
           <input type="search" id="site-search" name="q" />
-          <button>search</button>
+          <button onclick="sendoutput()">search</button>
+          <p id="output"> </p>
         </form>
       </section>
     </main>
