@@ -1,6 +1,7 @@
 
 nav {
-    border:  1px solid #333;
+    
+    margin: -9px;
     
 }
 
@@ -8,21 +9,28 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: right;
+    margin:0;
+    padding: 0;
 }
 nav a {
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
+    font-size: 1rem;
     
 }
+
 
 #logo{
     background-color: yellow;
     text-align: center;
+    font-size: 2rem;
+    
 }
 
 #form{
 border: 2px solid green;
+padding: 0 10% 0 10%;
 
 }
 
