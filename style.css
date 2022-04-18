@@ -7,8 +7,12 @@ main{
 }
 
 #form{
-    width:auto;
+border: 2px solid green;
+
 }
+
 footer{
     display: block;
+    text-align: center;
+    padding: 25px;
 }
