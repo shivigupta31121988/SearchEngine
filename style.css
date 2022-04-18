@@ -1,11 +1,14 @@
 main{
- width: 25% 25%;
 }
 
 #logo{
     background-color: yellow;
+    text-align: center;
 }
 
+#form{
+    width:auto;
+}
 footer{
     display: block;
 }
