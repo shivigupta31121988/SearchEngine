@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
-    <title>JS Bin</title>
+    <title>En-Genie</title>
     <script>
         function setYear(){
                document.getElementById('p_Year').innerText =new Date().getFullYear();
@@ -31,7 +31,7 @@
 
     <main>
       <section id="logo">
-        <h1>Our Search Engine</h1>
+        <h1>En-Genie</h1>
       </section>
 
       <section id="form">
@@ -39,13 +39,22 @@
           <input type="search" id="site-search" name="q" style="width: 500px;">
           <button onclick="sendoutput()">search</button>
           <p id="output"> </p>
-
-          <iframe src="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet" width="600" height="500"></iframe>
-
-          <iframe src="https://dotnet.microsoft.com/en-us/learn/aspnet" width="600" height="500"></iframe>
         </form>
       </section>
+
+      <section class="results">
+          <p> <a href="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic">Birds Pictures & Facts - National Geographic </a></p>
+          <cite> https://birdsoftheworld.com</cite>
+          <p>Birds are vertebrate animals adapted for flight. Many can also run, jump, swim, and dive. Some, like penguins, have lost the ability to fly but retained their wings. Birds are found worldwide and ...</p>
+          <iframe src="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic" width="600" height="500"></iframe>
+
+          <iframe src="https://dotnet.microsoft.com/en-us/learn/aspnet" width="600" height="500"></iframe>
+        </section>
     </main>
+
+    
+
+
 
     <footer> &copy <span id="p_Year"></span> <span>SearchEngine</span> </footer>
   </body>
