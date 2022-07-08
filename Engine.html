@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
-    <title>En-Genie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">    <title>En-Genie</title>
     <script>
         function setYear(){
                document.getElementById('p_Year').innerText =new Date().getFullYear();
@@ -34,26 +34,32 @@
         <h1>En-Genie</h1>
       </section>
 
-      <section id="form">
-        <form action="#">
-          <input type="search" id="site-search" name="q" style="width: 500px;">
-          <button onclick="sendoutput()">search</button>
-          <p id="output"> </p>
-        </form>
-      </section>
+      <div class="form_div"> 
+            <section id="form">
+              <form action="#">
+                <input type="search" id="site-search" name="q" >
+                <button onclick="sendoutput()">search</button>
+                <p id="output"> </p>
+              </form>
+            </section>
+      </div>
 
-      <section class="search-results">
-          <p> <a href="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic">Birds Pictures & Facts - National Geographic </a></p>
-          <cite> https://birdsoftheworld.com</cite>
-          <p>Birds are vertebrate animals adapted for flight. Many can also run, jump, swim, and dive. Some, like penguins, have lost the ability to fly but retained their wings. Birds are found worldwide and ...</p>
-          <iframe src="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic" width="600" height="500"></iframe>
-          
-          <p> <a href="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic"> Bird Delivery Food </a></p>
-          <cite> https://birdsoftheworld.com</cite>
-          <p>Birds are vertebrate animals adapted for flight. Many can also run, jump, swim, and dive. Some, like penguins, have lost the ability to fly but retained their wings. Birds are found worldwide and ...</p>
-          <iframe src="https://bird-rotterdam.nl/" width="600" height="500"></iframe>
+      <div class="results_div">
+             <section class="search-results">
+              <p> <a href="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic">Birds Pictures & Facts - National Geographic </a></p>
+              <cite> https://birdsoftheworld.com</cite>
+              <p>Birds are vertebrate animals adapted for flight. Many can also run, jump, swim, and dive. Some, like penguins, have lost the ability to fly but retained their wings. Birds are found worldwide and ...</p>
+              <iframe name="frame" src="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic" ></iframe>
+              
+              <p> <a href="https://www.bing.com/search?q=bird&qs=n&form=QBRE&sp=-1&pq=bird&sc=6-4&sk=&cvid=B8B8CFD27C7C4D1188C23B27D8F623DE&ghsh=0&ghacc=0#:~:text=Bird%20Pictures%20%26%20Facts%20%2D%20National%20Geographic"> Bird Delivery Food </a></p>
+              <cite> https://birdsoftheworld.com</cite>
+              <p>Birds are vertebrate animals adapted for flight. Many can also run, jump, swim, and dive. Some, like penguins, have lost the ability to fly but retained their wings. Birds are found worldwide and ...</p>
+              <iframe name="frame" src="https://bird-rotterdam.nl/" ></iframe>
 
-        </section>
+            </section>
+      </div>
+
+
     </main>
 
     
